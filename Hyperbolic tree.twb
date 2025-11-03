@@ -1,0 +1,1214 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.1003.1601                               -->
+<workbook original-version='18.1' source-build='2025.2.4 (20252.25.1003.1601)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <Extensions />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <_.fcp.VizExtensions.true...VizExtensions />
+    <_.fcp.VizExtensionsDupEncodingUUID.true...VizExtensionsDupEncodingUUID />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='municipis' inline='true' name='federated.1101mq51b0bifs15ky2td1kr6h93' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='municipis' name='textscan.0owg1xp1vto2bc1dskk5y154fn8o'>
+            <connection class='textscan' directory='C:/Users/grius/Documents/Gerard/Formació/UOC Master Data Science/6e semestre/Visualització de dades/PAC 2/dades' filename='municipis.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0owg1xp1vto2bc1dskk5y154fn8o' name='municipis.csv' table='[municipis#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='es_ES'>
+            <column datatype='string' name='_id' ordinal='0' />
+            <column datatype='integer' name='Codi INE' ordinal='1' />
+            <column datatype='string' name='Nom del municipi' ordinal='2' />
+            <column datatype='string' name='Nom curt del municipi' ordinal='3' />
+            <column datatype='string' name='Article del municipi' ordinal='4' />
+            <column datatype='string' name='Nom del municipi transliterat' ordinal='5' />
+            <column datatype='string' name='Nom curt transliterat' ordinal='6' />
+            <column datatype='string' name='Centre municipal' ordinal='7' />
+            <column datatype='integer' name='Codi de comarca' ordinal='8' />
+            <column datatype='string' name='Nom de la comarca' ordinal='9' />
+            <column datatype='integer' name='Codi de la província' ordinal='10' />
+            <column datatype='string' name='Nom de la província' ordinal='11' />
+            <column datatype='string' name='Adreça completa' ordinal='12' />
+            <column datatype='string' name='Adreça' ordinal='13' />
+            <column datatype='integer' name='Codi postal' ordinal='14' />
+            <column datatype='string' name='Localització' ordinal='15' />
+            <column datatype='integer' name='Telèfon de contacte' ordinal='16' />
+            <column datatype='integer' name='Fax' ordinal='17' />
+            <column datatype='string' name='Correu de contacte' ordinal='18' />
+            <column datatype='string' name='Web' ordinal='19' />
+            <column datatype='string' name='NIF' ordinal='20' />
+            <column datatype='string' name='Escut del municipi' ordinal='21' />
+            <column datatype='string' name='Bandera del municipi' ordinal='22' />
+            <column datatype='string' name='Vista del municipi' ordinal='23' />
+            <column datatype='integer' name='Codi INE 6' ordinal='24' />
+            <column datatype='string' name='Nom del recurs a la DBPedia' ordinal='25' />
+            <column datatype='integer' name='Nombre d&apos;habitants' ordinal='26' />
+            <column datatype='string' name='Extensió' ordinal='27' />
+            <column datatype='integer' name='Altitud' ordinal='28' />
+            <column datatype='datetime' name='_lastChange' ordinal='29' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[municipis.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;es&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;€&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;es_ES&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[_id]</local-name>
+            <parent-name>[municipis.csv]</parent-name>
+            <remote-alias>_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[municipis.csv_DFE076C26357439392D5B162343B44B7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Codi INE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Codi INE]</local-name>
+            <parent-name>[municipis.csv]</parent-name>
+            <remote-alias>Codi INE</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[municipis.csv_DFE076C26357439392D5B162343B44B7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Nom del municipi</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Nom del municipi]</local-name>
+            <parent-name>[municipis.csv]</parent-name>
+            <remote-alias>Nom del municipi</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[municipis.csv_DFE076C26357439392D5B162343B44B7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Nom curt del municipi</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Nom curt del municipi]</local-name>
+            <parent-name>[municipis.csv]</parent-name>
+            <remote-alias>Nom curt del municipi</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[municipis.csv_DFE076C26357439392D5B162343B44B7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Article del municipi</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Article del municipi]</local-name>
+            <parent-name>[municipis.csv]</parent-name>
+            <remote-alias>Article del municipi</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[municipis.csv_DFE076C26357439392D5B162343B44B7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Nom del municipi transliterat</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Nom del municipi transliterat]</local-name>
+            <parent-name>[municipis.csv]</parent-name>
+            <remote-alias>Nom del municipi transliterat</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[municipis.csv_DFE076C26357439392D5B162343B44B7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Nom curt transliterat</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Nom curt transliterat]</local-name>
+            <parent-name>[municipis.csv]</parent-name>
+            <remote-alias>Nom curt transliterat</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[municipis.csv_DFE076C26357439392D5B162343B44B7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Centre municipal</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Centre municipal]</local-name>
+            <parent-name>[municipis.csv]</parent-name>
+            <remote-alias>Centre municipal</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[municipis.csv_DFE076C26357439392D5B162343B44B7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Codi de comarca</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Codi de comarca]</local-name>
+            <parent-name>[municipis.csv]</parent-name>
+            <remote-alias>Codi de comarca</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[municipis.csv_DFE076C26357439392D5B162343B44B7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Nom de la comarca</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Nom de la comarca]</local-name>
+            <parent-name>[municipis.csv]</parent-name>
+            <remote-alias>Nom de la comarca</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[municipis.csv_DFE076C26357439392D5B162343B44B7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Codi de la província</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Codi de la província]</local-name>
+            <parent-name>[municipis.csv]</parent-name>
+            <remote-alias>Codi de la província</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[municipis.csv_DFE076C26357439392D5B162343B44B7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Nom de la província</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Nom de la província]</local-name>
+            <parent-name>[municipis.csv]</parent-name>
+            <remote-alias>Nom de la província</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[municipis.csv_DFE076C26357439392D5B162343B44B7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Adreça completa</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Adreça completa]</local-name>
+            <parent-name>[municipis.csv]</parent-name>
+            <remote-alias>Adreça completa</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[municipis.csv_DFE076C26357439392D5B162343B44B7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Adreça</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Adreça]</local-name>
+            <parent-name>[municipis.csv]</parent-name>
+            <remote-alias>Adreça</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[municipis.csv_DFE076C26357439392D5B162343B44B7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Codi postal</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Codi postal]</local-name>
+            <parent-name>[municipis.csv]</parent-name>
+            <remote-alias>Codi postal</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[municipis.csv_DFE076C26357439392D5B162343B44B7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Localització</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Localització]</local-name>
+            <parent-name>[municipis.csv]</parent-name>
+            <remote-alias>Localització</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[municipis.csv_DFE076C26357439392D5B162343B44B7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Telèfon de contacte</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Telèfon de contacte]</local-name>
+            <parent-name>[municipis.csv]</parent-name>
+            <remote-alias>Telèfon de contacte</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[municipis.csv_DFE076C26357439392D5B162343B44B7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fax</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Fax]</local-name>
+            <parent-name>[municipis.csv]</parent-name>
+            <remote-alias>Fax</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[municipis.csv_DFE076C26357439392D5B162343B44B7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Correu de contacte</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Correu de contacte]</local-name>
+            <parent-name>[municipis.csv]</parent-name>
+            <remote-alias>Correu de contacte</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[municipis.csv_DFE076C26357439392D5B162343B44B7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Web</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Web]</local-name>
+            <parent-name>[municipis.csv]</parent-name>
+            <remote-alias>Web</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[municipis.csv_DFE076C26357439392D5B162343B44B7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NIF</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NIF]</local-name>
+            <parent-name>[municipis.csv]</parent-name>
+            <remote-alias>NIF</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[municipis.csv_DFE076C26357439392D5B162343B44B7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Escut del municipi</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Escut del municipi]</local-name>
+            <parent-name>[municipis.csv]</parent-name>
+            <remote-alias>Escut del municipi</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[municipis.csv_DFE076C26357439392D5B162343B44B7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Bandera del municipi</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Bandera del municipi]</local-name>
+            <parent-name>[municipis.csv]</parent-name>
+            <remote-alias>Bandera del municipi</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[municipis.csv_DFE076C26357439392D5B162343B44B7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Vista del municipi</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Vista del municipi]</local-name>
+            <parent-name>[municipis.csv]</parent-name>
+            <remote-alias>Vista del municipi</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[municipis.csv_DFE076C26357439392D5B162343B44B7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Codi INE 6</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Codi INE 6]</local-name>
+            <parent-name>[municipis.csv]</parent-name>
+            <remote-alias>Codi INE 6</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[municipis.csv_DFE076C26357439392D5B162343B44B7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Nom del recurs a la DBPedia</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Nom del recurs a la DBPedia]</local-name>
+            <parent-name>[municipis.csv]</parent-name>
+            <remote-alias>Nom del recurs a la DBPedia</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[municipis.csv_DFE076C26357439392D5B162343B44B7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Nombre d&apos;habitants</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Nombre d&apos;habitants]</local-name>
+            <parent-name>[municipis.csv]</parent-name>
+            <remote-alias>Nombre d&apos;habitants</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[municipis.csv_DFE076C26357439392D5B162343B44B7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Extensió</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Extensió]</local-name>
+            <parent-name>[municipis.csv]</parent-name>
+            <remote-alias>Extensió</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[municipis.csv_DFE076C26357439392D5B162343B44B7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Altitud</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Altitud]</local-name>
+            <parent-name>[municipis.csv]</parent-name>
+            <remote-alias>Altitud</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[municipis.csv_DFE076C26357439392D5B162343B44B7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>_lastChange</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[_lastChange]</local-name>
+            <parent-name>[municipis.csv]</parent-name>
+            <remote-alias>_lastChange</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[municipis.csv_DFE076C26357439392D5B162343B44B7]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='municipis.csv' datatype='table' name='[__tableau_internal_object_id__].[municipis.csv_DFE076C26357439392D5B162343B44B7]' role='measure' type='quantitative' />
+      <column caption='_Id' datatype='string' name='[_id]' role='dimension' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='es_ES' class='hyper' dbname='C:/Users/grius/AppData/Local/Temp/TableauTemp/#TableauTemp_0ecupup0uihv5p1aroq010xif6nw.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='11/03/2025 09:57:23 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>_id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>municipis.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>311</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[municipis.csv_DFE076C26357439392D5B162343B44B7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Codi INE</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Codi INE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Codi INE</remote-alias>
+              <ordinal>1</ordinal>
+              <family>municipis.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>311</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[municipis.csv_DFE076C26357439392D5B162343B44B7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Nom del municipi</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Nom del municipi]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Nom del municipi</remote-alias>
+              <ordinal>2</ordinal>
+              <family>municipis.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>311</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[municipis.csv_DFE076C26357439392D5B162343B44B7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Nom curt del municipi</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Nom curt del municipi]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Nom curt del municipi</remote-alias>
+              <ordinal>3</ordinal>
+              <family>municipis.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>311</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[municipis.csv_DFE076C26357439392D5B162343B44B7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Article del municipi</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Article del municipi]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Article del municipi</remote-alias>
+              <ordinal>4</ordinal>
+              <family>municipis.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[municipis.csv_DFE076C26357439392D5B162343B44B7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Nom del municipi transliterat</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Nom del municipi transliterat]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Nom del municipi transliterat</remote-alias>
+              <ordinal>5</ordinal>
+              <family>municipis.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>311</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[municipis.csv_DFE076C26357439392D5B162343B44B7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Nom curt transliterat</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Nom curt transliterat]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Nom curt transliterat</remote-alias>
+              <ordinal>6</ordinal>
+              <family>municipis.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>311</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[municipis.csv_DFE076C26357439392D5B162343B44B7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Centre municipal</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Centre municipal]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Centre municipal</remote-alias>
+              <ordinal>7</ordinal>
+              <family>municipis.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>311</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[municipis.csv_DFE076C26357439392D5B162343B44B7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Codi de comarca</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Codi de comarca]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Codi de comarca</remote-alias>
+              <ordinal>8</ordinal>
+              <family>municipis.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[municipis.csv_DFE076C26357439392D5B162343B44B7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Nom de la comarca</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Nom de la comarca]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Nom de la comarca</remote-alias>
+              <ordinal>9</ordinal>
+              <family>municipis.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[municipis.csv_DFE076C26357439392D5B162343B44B7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Codi de la província</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Codi de la província]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Codi de la província</remote-alias>
+              <ordinal>10</ordinal>
+              <family>municipis.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[municipis.csv_DFE076C26357439392D5B162343B44B7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Nom de la província</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Nom de la província]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Nom de la província</remote-alias>
+              <ordinal>11</ordinal>
+              <family>municipis.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[municipis.csv_DFE076C26357439392D5B162343B44B7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Adreça completa</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Adreça completa]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Adreça completa</remote-alias>
+              <ordinal>12</ordinal>
+              <family>municipis.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>311</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[municipis.csv_DFE076C26357439392D5B162343B44B7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Adreça</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Adreça]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Adreça</remote-alias>
+              <ordinal>13</ordinal>
+              <family>municipis.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>238</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[municipis.csv_DFE076C26357439392D5B162343B44B7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Codi postal</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Codi postal]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Codi postal</remote-alias>
+              <ordinal>14</ordinal>
+              <family>municipis.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>276</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[municipis.csv_DFE076C26357439392D5B162343B44B7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Localització</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Localització]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Localització</remote-alias>
+              <ordinal>15</ordinal>
+              <family>municipis.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>311</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[municipis.csv_DFE076C26357439392D5B162343B44B7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Telèfon de contacte</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Telèfon de contacte]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Telèfon de contacte</remote-alias>
+              <ordinal>16</ordinal>
+              <family>municipis.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>311</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[municipis.csv_DFE076C26357439392D5B162343B44B7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Fax</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Fax]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Fax</remote-alias>
+              <ordinal>17</ordinal>
+              <family>municipis.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>310</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[municipis.csv_DFE076C26357439392D5B162343B44B7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Correu de contacte</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Correu de contacte]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Correu de contacte</remote-alias>
+              <ordinal>18</ordinal>
+              <family>municipis.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>310</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[municipis.csv_DFE076C26357439392D5B162343B44B7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Web</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Web]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Web</remote-alias>
+              <ordinal>19</ordinal>
+              <family>municipis.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>311</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[municipis.csv_DFE076C26357439392D5B162343B44B7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>NIF</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[NIF]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>NIF</remote-alias>
+              <ordinal>20</ordinal>
+              <family>municipis.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>311</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[municipis.csv_DFE076C26357439392D5B162343B44B7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Escut del municipi</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Escut del municipi]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Escut del municipi</remote-alias>
+              <ordinal>21</ordinal>
+              <family>municipis.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>311</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[municipis.csv_DFE076C26357439392D5B162343B44B7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Bandera del municipi</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Bandera del municipi]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Bandera del municipi</remote-alias>
+              <ordinal>22</ordinal>
+              <family>municipis.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>297</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[municipis.csv_DFE076C26357439392D5B162343B44B7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Vista del municipi</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Vista del municipi]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Vista del municipi</remote-alias>
+              <ordinal>23</ordinal>
+              <family>municipis.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>311</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[municipis.csv_DFE076C26357439392D5B162343B44B7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Codi INE 6</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Codi INE 6]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Codi INE 6</remote-alias>
+              <ordinal>24</ordinal>
+              <family>municipis.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>311</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[municipis.csv_DFE076C26357439392D5B162343B44B7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Nom del recurs a la DBPedia</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Nom del recurs a la DBPedia]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Nom del recurs a la DBPedia</remote-alias>
+              <ordinal>25</ordinal>
+              <family>municipis.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>311</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[municipis.csv_DFE076C26357439392D5B162343B44B7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Nombre d&apos;habitants</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Nombre d&apos;habitants]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Nombre d&apos;habitants</remote-alias>
+              <ordinal>26</ordinal>
+              <family>municipis.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>297</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[municipis.csv_DFE076C26357439392D5B162343B44B7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Extensió</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Extensió]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Extensió</remote-alias>
+              <ordinal>27</ordinal>
+              <family>municipis.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>305</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[municipis.csv_DFE076C26357439392D5B162343B44B7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Altitud</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Altitud]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Altitud</remote-alias>
+              <ordinal>28</ordinal>
+              <family>municipis.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>258</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[municipis.csv_DFE076C26357439392D5B162343B44B7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>_lastChange</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[_lastChange]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>_lastChange</remote-alias>
+              <ordinal>29</ordinal>
+              <family>municipis.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>40</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[municipis.csv_DFE076C26357439392D5B162343B44B7]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;España&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='municipis.csv' id='municipis.csv_DFE076C26357439392D5B162343B44B7'>
+            <properties context=''>
+              <relation connection='textscan.0owg1xp1vto2bc1dskk5y154fn8o' name='municipis.csv' table='[municipis#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='es_ES'>
+                  <column datatype='string' name='_id' ordinal='0' />
+                  <column datatype='integer' name='Codi INE' ordinal='1' />
+                  <column datatype='string' name='Nom del municipi' ordinal='2' />
+                  <column datatype='string' name='Nom curt del municipi' ordinal='3' />
+                  <column datatype='string' name='Article del municipi' ordinal='4' />
+                  <column datatype='string' name='Nom del municipi transliterat' ordinal='5' />
+                  <column datatype='string' name='Nom curt transliterat' ordinal='6' />
+                  <column datatype='string' name='Centre municipal' ordinal='7' />
+                  <column datatype='integer' name='Codi de comarca' ordinal='8' />
+                  <column datatype='string' name='Nom de la comarca' ordinal='9' />
+                  <column datatype='integer' name='Codi de la província' ordinal='10' />
+                  <column datatype='string' name='Nom de la província' ordinal='11' />
+                  <column datatype='string' name='Adreça completa' ordinal='12' />
+                  <column datatype='string' name='Adreça' ordinal='13' />
+                  <column datatype='integer' name='Codi postal' ordinal='14' />
+                  <column datatype='string' name='Localització' ordinal='15' />
+                  <column datatype='integer' name='Telèfon de contacte' ordinal='16' />
+                  <column datatype='integer' name='Fax' ordinal='17' />
+                  <column datatype='string' name='Correu de contacte' ordinal='18' />
+                  <column datatype='string' name='Web' ordinal='19' />
+                  <column datatype='string' name='NIF' ordinal='20' />
+                  <column datatype='string' name='Escut del municipi' ordinal='21' />
+                  <column datatype='string' name='Bandera del municipi' ordinal='22' />
+                  <column datatype='string' name='Vista del municipi' ordinal='23' />
+                  <column datatype='integer' name='Codi INE 6' ordinal='24' />
+                  <column datatype='string' name='Nom del recurs a la DBPedia' ordinal='25' />
+                  <column datatype='integer' name='Nombre d&apos;habitants' ordinal='26' />
+                  <column datatype='string' name='Extensió' ordinal='27' />
+                  <column datatype='integer' name='Altitud' ordinal='28' />
+                  <column datatype='datetime' name='_lastChange' ordinal='29' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Hoja 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='municipis' name='federated.1101mq51b0bifs15ky2td1kr6h93' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1101mq51b0bifs15ky2td1kr6h93'>
+            <column datatype='string' name='[Nom curt del municipi]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Nom de la comarca]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Nom de la província]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Nombre d&apos;habitants]' role='measure' type='quantitative' />
+            <column-instance column='[Nom curt del municipi]' derivation='None' name='[none:Nom curt del municipi:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Nom de la comarca]' derivation='None' name='[none:Nom de la comarca:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Nom de la província]' derivation='None' name='[none:Nom de la província:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Nombre d&apos;habitants]' derivation='Sum' name='[sum:Nombre d&apos;habitants:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <_.fcp.VizExtensions.false...mark class='Automatic' />
+            <_.fcp.VizExtensions.true...mark class='VizExtension' />
+            <_.fcp.VizExtensions.true...add-in add-in-id='com.ladataviz.extension.tree2.0' extension-url='https://partner-extensions.tableauusercontent.com/viz/ladataviz/all/tree.html' extension-version='1.0.0' instance-id='C73CB74CA2124238BC3CE1CCE4A7558D'>
+              <instance-settings>
+                <setting key='vizConfig' value='{&quot;layoutOrientation&quot;:&quot;radial&quot;,&quot;showTreeRoot&quot;:false,&quot;treeHasFakeRoot&quot;:false,&quot;rootName&quot;:&quot;root&quot;,&quot;padding&quot;:[1],&quot;opacity&quot;:[0.8],&quot;sizeType&quot;:&quot;constant&quot;,&quot;constantNodeSize&quot;:[10],&quot;sizeArray&quot;:[2.5,40],&quot;linkStyle&quot;:&quot;curved&quot;,&quot;linkWidth&quot;:[1],&quot;nodesColor&quot;:&quot;#4E79A7&quot;,&quot;linksColor&quot;:&quot;black&quot;,&quot;rotationAngle&quot;:[0],&quot;addX&quot;:[0],&quot;addY&quot;:[0],&quot;colorLevel&quot;:0,&quot;paddingArray&quot;:[[0],[0],[0],[0]],&quot;backgroundColor&quot;:&quot;#ffffff&quot;,&quot;fitWidth&quot;:true,&quot;fitHeight&quot;:true,&quot;fixedWidth&quot;:[1652],&quot;fixedHeight&quot;:[811],&quot;displayLabels&quot;:true,&quot;labelFontSize&quot;:[12],&quot;labelFontColor&quot;:&quot;#000000&quot;,&quot;labelStrokeWidth&quot;:[3],&quot;labelStrokeColor&quot;:&quot;#ffffff&quot;,&quot;labelWeight&quot;:&quot;normal&quot;,&quot;labelMatchColor&quot;:false,&quot;labelLocale&quot;:&quot;auto&quot;,&quot;labelStyle&quot;:&quot;number&quot;,&quot;labelNotation&quot;:&quot;standard&quot;,&quot;labelCompactDisplay&quot;:&quot;short&quot;,&quot;labelDecimals&quot;:[0],&quot;labelPrefix&quot;:&quot;&quot;,&quot;labelSuffix&quot;:&quot;&quot;,&quot;labelPixelOrPoint&quot;:&quot;px&quot;,&quot;colorRole&quot;:null,&quot;colorName&quot;:null,&quot;colorOn&quot;:&quot;nodes&quot;,&quot;discreteOption&quot;:&quot;schemeTableau10&quot;,&quot;discreteColorPalette&quot;:[&quot;#4e79a7&quot;,&quot;#f28e2c&quot;,&quot;#e15759&quot;,&quot;#76b7b2&quot;,&quot;#59a14f&quot;,&quot;#edc949&quot;,&quot;#af7aa1&quot;,&quot;#ff9da7&quot;,&quot;#9c755f&quot;,&quot;#bab0ab&quot;],&quot;uniqueColors&quot;:[],&quot;displayLegend&quot;:false,&quot;legendBackgroundColor&quot;:&quot;#ffffff&quot;,&quot;legendFontColor&quot;:&quot;#313131&quot;,&quot;legendFrameColor&quot;:&quot;#f3f3f3&quot;,&quot;displayTooltip&quot;:true}' />
+              </instance-settings>
+              <type-settings>
+                <worksheet />
+              </type-settings>
+            </_.fcp.VizExtensions.true...add-in>
+            <encodings>
+              <_.fcp.VizExtensions.false...lod _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{BBA657E7-801F-4FB5-BC4C-2D7528540F8A}' column='[federated.1101mq51b0bifs15ky2td1kr6h93].[sum:Nombre d&apos;habitants:qk]' />
+              <_.fcp.VizExtensions.true...custom _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{BBA657E7-801F-4FB5-BC4C-2D7528540F8A}' column='[federated.1101mq51b0bifs15ky2td1kr6h93].[sum:Nombre d&apos;habitants:qk]' custom-type-name='size' />
+              <lod _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{F95C1A64-7D5E-4CA2-ADDF-D24B5FA5EF97}' column='[federated.1101mq51b0bifs15ky2td1kr6h93].[none:Nom de la província:nk]' />
+              <lod _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{A275B1C9-D022-4F66-8DEE-7B7A6874D491}' column='[federated.1101mq51b0bifs15ky2td1kr6h93].[none:Nom de la comarca:nk]' />
+              <lod _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{A53003D0-8D98-4621-83C3-282B9CED475A}' column='[federated.1101mq51b0bifs15ky2td1kr6h93].[none:Nom curt del municipi:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{4F5CE793-73DE-4C20-A2E6-2A0FB6503B10}' />
+    </worksheet>
+    <worksheet name='Hoja 2'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{1E3E5BF8-292F-4879-B767-AE42B4B82CFF}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Hoja 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1101mq51b0bifs15ky2td1kr6h93].[none:Nom curt del municipi:nk]</field>
+            <field>[federated.1101mq51b0bifs15ky2td1kr6h93].[none:Nom de la comarca:nk]</field>
+            <field>[federated.1101mq51b0bifs15ky2td1kr6h93].[none:Nom de la província:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{386A57BA-2354-4B01-BB40-667D2F888C0B}' />
+    </window>
+    <window class='worksheet' name='Hoja 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DA036998-59B5-40A6-9D79-A73B15C08A1A}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Hoja 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Hoja 2' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+  <_.fcp.VizExtensions.true...referenced-extensions>
+    <_.fcp.VizExtensions.true...referenced-extension>
+      <manifest manifest-version='0.1'>
+        <worksheet-extension extension-version='1.0.0' id='com.ladataviz.extension.tree2.0'>
+          <default-locale>en_US</default-locale>
+          <name resource-id='name' />
+          <description>Tree</description>
+          <author email='tristan@ladataviz.com' name='LaDataViz' organization='LaDataViz' website='https://www.ladataviz.com' />
+          <min-api-version>1.11</min-api-version>
+          <source-location>
+            <url>https://partner-extensions.tableauusercontent.com/viz/ladataviz/all/tree.html</url>
+          </source-location>
+          <icon />
+          <context-menu>
+            <configure-context-menu-item />
+          </context-menu>
+          <encoding id='size'>
+            <display-name>Size</display-name>
+            <data-spec>
+              <data-type>numeric</data-type>
+            </data-spec>
+            <role-spec>
+              <role-type>continuous-measure</role-type>
+            </role-spec>
+            <fields max-count='1' />
+            <encoding-icon token='size' />
+            <tooltip resource-id='tooltip-size'>Add a size to the nodes</tooltip>
+          </encoding>
+          <encoding id='color'>
+            <display-name>Color</display-name>
+            <role-spec>
+              <role-type>continuous-dimension</role-type>
+              <role-type>discrete-dimension</role-type>
+            </role-spec>
+            <fields max-count='1' />
+            <encoding-icon token='color' />
+          </encoding>
+        </worksheet-extension>
+        <resources>
+          <resource id='name'>
+            <text locale='en_US'>Tree</text>
+          </resource>
+        </resources>
+      </manifest>
+      <referenced-views>
+        <referenced-view instances='1' viewId='Hoja 1' />
+      </referenced-views>
+    </_.fcp.VizExtensions.true...referenced-extension>
+  </_.fcp.VizExtensions.true...referenced-extensions>
+</workbook>
